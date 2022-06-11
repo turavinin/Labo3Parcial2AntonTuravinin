@@ -128,8 +128,8 @@ function GetVehiculos()
         {
             response.json().then(function(obj)
             {
-                let array = obj.map(ObjectToTipoPersona);
-                ArmarTabla(array, false);
+                arrayVehiculos= obj.map(ObjectToTipoPersona);
+                ArmarTabla(arrayVehiculos, false);
             })
         } 
         else 

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" media="all" />
+    <title>2do Parcial Laboratorio 3 - Anton Turavinin</title>
+  </head>
+  <body>
+    <div id="spinner">
+      <img src="spinner.gif">
+    </div>
+    <main>
+      <!-- ----TABLE---- -->
+      <div id="table-warepper">
+        <table id="table">
+        </table>
+        <button id="agregarBtn" type="button">AGREGAR</button>
+      </div>
+
+      <!-- ----FORM---- -->
+      <div id="form-wrapper">
+        <form id="form">
+          <h1 id="headerForm">FORM VEHICULOS</h1>
+          <ul>
+            <!-- inId -->
+            <li>
+              <label for="inId">
+                <p class="form-label-title">Id: </p>
+                <input type="text", id="inId", name="inId" readonly>
+              </label>
+            </li>
+
+             <!-- inFabricante -->
+             <li>
+                <label for="inFabricante">
+                  <p class="form-label-title">Fabricante: </p>
+                  <input type="text", id="inFabricante", name="inFabricante">
+                </label>
+              </li>
+
+             <!-- inModelo -->
+             <li>
+              <label for="inModelo">
+                <p class="form-label-title">modelo: </p>
+                <input type="text", id="inModelo", name="inModelo">
+              </label>
+            </li>
+
+            <!-- inAñoLanzamiento -->
+             <li>
+              <label for="inAñoLanzamiento">
+                <p class="form-label-title">Año Lanzamiento: </p>
+                <input type="text", id="inAñoLanzamiento", name="inAñoLanzamiento">
+              </label>
+            </li>
+
+            <div id="combo-box-form">
+              <p id="combo-box-title-form">TIPO:</p>
+              <select id="combo-box-select-form">
+                  <option value="1" selected >Auto</option>
+                  <option value="2">Camioneta</option>
+              </select>
+            </div>
+
+            <div id="camposFormAuto">
+            <!-- inCantidadPuertas -->
+             <li>
+              <label for="inCantidadPuertas">
+                <p class="form-label-title">Cantidad Puertas: </p>
+                <input type="text", id="inCantidadPuertas", name="inCantidadPuertas">
+              </label>
+            </li>
+            </div>
+
+            <div id="camposFormCamioneta">
+            <!-- inTransmision4x4 -->
+            <li>
+              <label for="inTransmision4x4">
+                <p class="form-label-title">Transmision4x4: </p>
+                <input type="text", id="inTransmision4x4", name="inTransmision4x4">
+              </label>
+            </li>
+
+        </div>
+    </ul>
+        </form>
+
+        <div id="form-buttons-wrapper">
+          <button id="aceptar" class="formBtn">ACEPTAR</button>
+          <button id="cancelar" class="formBtn">CANCELAR</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
